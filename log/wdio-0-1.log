@@ -1,0 +1,59 @@
+2020-08-20T17:27:59.538Z INFO @wdio/local-runner: Run worker command: run
+2020-08-20T17:27:59.564Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-08-20T17:28:00.093Z WARN @wdio/mocha-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): C:\Webdriverio\test\specs\example.e2e.spec.js
+ Error:  Error: Cannot find module '..pageobjects/login.page'
+Require stack:
+- C:\Webdriverio\test\specs\example.e2e.spec.js
+- C:\Webdriverio\node_modules\mocha\lib\mocha.js
+- C:\Webdriverio\node_modules\mocha\index.js
+- C:\Webdriverio\node_modules\@wdio\mocha-framework\build\index.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\utils.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\initialisePlugin.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\index.js
+- C:\Webdriverio\node_modules\@wdio\runner\build\index.js
+- C:\Webdriverio\node_modules\@wdio\local-runner\build\run.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:842:27)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Webdriverio\test\specs\example.e2e.spec.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+2020-08-20T17:28:00.146Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-08-20T17:28:00.148Z INFO webdriver: [POST] http://localhost:9515/session
+2020-08-20T17:28:00.148Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2020-08-20T17:28:06.497Z ERROR @wdio/runner: Error: Cannot find module '..pageobjects/login.page'
+Require stack:
+- C:\Webdriverio\test\specs\example.e2e.spec.js
+- C:\Webdriverio\node_modules\mocha\lib\mocha.js
+- C:\Webdriverio\node_modules\mocha\index.js
+- C:\Webdriverio\node_modules\@wdio\mocha-framework\build\index.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\utils.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\initialisePlugin.js
+- C:\Webdriverio\node_modules\@wdio\runner\node_modules\@wdio\utils\build\index.js
+- C:\Webdriverio\node_modules\@wdio\runner\build\index.js
+- C:\Webdriverio\node_modules\@wdio\local-runner\build\run.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:842:27)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Webdriverio\test\specs\example.e2e.spec.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+2020-08-20T17:28:06.500Z INFO webdriver: COMMAND deleteSession()
+2020-08-20T17:28:06.501Z INFO webdriver: [DELETE] http://localhost:9515/session/d8b454558ce3463559a57a8550632eae

@@ -1,0 +1,24 @@
+2020-08-20T17:27:59.537Z INFO @wdio/local-runner: Run worker command: run
+2020-08-20T17:27:59.565Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-08-20T17:28:00.148Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-08-20T17:28:00.151Z INFO webdriver: [POST] http://localhost:9515/session
+2020-08-20T17:28:00.151Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2020-08-20T17:28:06.612Z INFO webdriver: COMMAND getLogTypes()
+2020-08-20T17:28:06.613Z INFO webdriver: [GET] http://localhost:9515/session/a1ce483acbc2b560e58d7d9b1232d9ec/se/log/types
+2020-08-20T17:28:06.624Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-08-20T17:28:06.627Z INFO webdriver: COMMAND getLogs("browser")
+2020-08-20T17:28:06.627Z INFO webdriver: [POST] http://localhost:9515/session/a1ce483acbc2b560e58d7d9b1232d9ec/se/log
+2020-08-20T17:28:06.627Z INFO webdriver: DATA { type: 'browser' }
+2020-08-20T17:28:06.630Z INFO webdriver: COMMAND getLogs("driver")
+2020-08-20T17:28:06.631Z INFO webdriver: [POST] http://localhost:9515/session/a1ce483acbc2b560e58d7d9b1232d9ec/se/log
+2020-08-20T17:28:06.631Z INFO webdriver: DATA { type: 'driver' }
+2020-08-20T17:28:06.638Z INFO webdriver: RESULT []
+2020-08-20T17:28:06.640Z INFO webdriver: RESULT []
+2020-08-20T17:28:06.641Z INFO webdriver: COMMAND deleteSession()
+2020-08-20T17:28:06.642Z INFO webdriver: [DELETE] http://localhost:9515/session/a1ce483acbc2b560e58d7d9b1232d9ec

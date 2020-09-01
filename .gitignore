@@ -1,0 +1,6 @@
+
+allure-results/
+.idea/
+node_modules/
+directory-with-report/
+your-result-folder/
